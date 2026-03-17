@@ -1,0 +1,68 @@
+slot,round_name,round_order,left,right
+MIDWEST_11_PLAYIN,First Four,0,NC State,Texas
+WEST_11_PLAYIN,First Four,0,SMU,Miami (OH)
+MIDWEST_16_PLAYIN,First Four,0,Howard,UMBC
+SOUTH_16_PLAYIN,First Four,0,Lehigh,Prairie View A&M
+E_R1_G1,Round of 64,1,Duke,Siena
+E_R1_G2,Round of 64,1,Ohio State,TCU
+E_R1_G3,Round of 64,1,Saint John's,Northern Iowa
+E_R1_G4,Round of 64,1,Kansas,California Baptist
+E_R1_G5,Round of 64,1,Louisville,South Florida
+E_R1_G6,Round of 64,1,Michigan State,North Dakota State
+E_R1_G7,Round of 64,1,UCLA,UCF
+E_R1_G8,Round of 64,1,Connecticut,Furman
+W_R1_G1,Round of 64,1,Arizona,Long Island
+W_R1_G2,Round of 64,1,Villanova,Utah State
+W_R1_G3,Round of 64,1,Wisconsin,High Point
+W_R1_G4,Round of 64,1,Arkansas,Hawai'i
+W_R1_G5,Round of 64,1,BYU,WEST_11_PLAYIN
+W_R1_G6,Round of 64,1,Gonzaga,Kennesaw State
+W_R1_G7,Round of 64,1,Miami (FL),Missouri
+W_R1_G8,Round of 64,1,Purdue,Queens
+S_R1_G1,Round of 64,1,Florida,SOUTH_16_PLAYIN
+S_R1_G2,Round of 64,1,Clemson,Iowa
+S_R1_G3,Round of 64,1,Vanderbilt,McNeese
+S_R1_G4,Round of 64,1,Nebraska,Troy
+S_R1_G5,Round of 64,1,North Carolina,VCU
+S_R1_G6,Round of 64,1,Illinois,Penn
+S_R1_G7,Round of 64,1,Saint Mary's College,Texas A&M
+S_R1_G8,Round of 64,1,Houston,Idaho
+M_R1_G1,Round of 64,1,Michigan,MIDWEST_16_PLAYIN
+M_R1_G2,Round of 64,1,Georgia,Saint Louis
+M_R1_G3,Round of 64,1,Texas Tech,Akron
+M_R1_G4,Round of 64,1,Alabama,Hofstra
+M_R1_G5,Round of 64,1,Tennessee,MIDWEST_11_PLAYIN
+M_R1_G6,Round of 64,1,Virginia,Wright State
+M_R1_G7,Round of 64,1,Kentucky,Santa Clara
+M_R1_G8,Round of 64,1,Iowa State,Tennessee State
+E_R2_G1,Round of 32,2,E_R1_G1,E_R1_G2
+E_R2_G2,Round of 32,2,E_R1_G3,E_R1_G4
+E_R2_G3,Round of 32,2,E_R1_G5,E_R1_G6
+E_R2_G4,Round of 32,2,E_R1_G7,E_R1_G8
+W_R2_G1,Round of 32,2,W_R1_G1,W_R1_G2
+W_R2_G2,Round of 32,2,W_R1_G3,W_R1_G4
+W_R2_G3,Round of 32,2,W_R1_G5,W_R1_G6
+W_R2_G4,Round of 32,2,W_R1_G7,W_R1_G8
+S_R2_G1,Round of 32,2,S_R1_G1,S_R1_G2
+S_R2_G2,Round of 32,2,S_R1_G3,S_R1_G4
+S_R2_G3,Round of 32,2,S_R1_G5,S_R1_G6
+S_R2_G4,Round of 32,2,S_R1_G7,S_R1_G8
+M_R2_G1,Round of 32,2,M_R1_G1,M_R1_G2
+M_R2_G2,Round of 32,2,M_R1_G3,M_R1_G4
+M_R2_G3,Round of 32,2,M_R1_G5,M_R1_G6
+M_R2_G4,Round of 32,2,M_R1_G7,M_R1_G8
+E_R3_G1,Sweet 16,3,E_R2_G1,E_R2_G2
+E_R3_G2,Sweet 16,3,E_R2_G3,E_R2_G4
+W_R3_G1,Sweet 16,3,W_R2_G1,W_R2_G2
+W_R3_G2,Sweet 16,3,W_R2_G3,W_R2_G4
+S_R3_G1,Sweet 16,3,S_R2_G1,S_R2_G2
+S_R3_G2,Sweet 16,3,S_R2_G3,S_R2_G4
+M_R3_G1,Sweet 16,3,M_R2_G1,M_R2_G2
+M_R3_G2,Sweet 16,3,M_R2_G3,M_R2_G4
+E_R4_G1,Elite 8,4,E_R3_G1,E_R3_G2
+W_R4_G1,Elite 8,4,W_R3_G1,W_R3_G2
+S_R4_G1,Elite 8,4,S_R3_G1,S_R3_G2
+M_R4_G1,Elite 8,4,M_R3_G1,M_R3_G2
+FF_G1,Final Four,5,E_R4_G1,W_R4_G1
+FF_G2,Final Four,5,S_R4_G1,M_R4_G1
+CHAMPION,Championship,6,FF_G1,FF_G2

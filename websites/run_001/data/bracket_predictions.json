@@ -1,0 +1,672 @@
+[
+  {
+    "slot": "MIDWEST_11_PLAYIN",
+    "round_name": "First Four",
+    "round_order": 0,
+    "team1": "NC State",
+    "team2": "Texas",
+    "team1_win_prob": 0.7466,
+    "winner": "NC State",
+    "winner_prob": 0.7466
+  },
+  {
+    "slot": "MIDWEST_16_PLAYIN",
+    "round_name": "First Four",
+    "round_order": 0,
+    "team1": "Howard",
+    "team2": "UMBC",
+    "team1_win_prob": 0.2004,
+    "winner": "UMBC",
+    "winner_prob": 0.7996
+  },
+  {
+    "slot": "SOUTH_16_PLAYIN",
+    "round_name": "First Four",
+    "round_order": 0,
+    "team1": "Lehigh",
+    "team2": "Prairie View A&M",
+    "team1_win_prob": 0.9111,
+    "winner": "Lehigh",
+    "winner_prob": 0.9111
+  },
+  {
+    "slot": "WEST_11_PLAYIN",
+    "round_name": "First Four",
+    "round_order": 0,
+    "team1": "SMU",
+    "team2": "Miami (OH)",
+    "team1_win_prob": 0.1041,
+    "winner": "Miami (OH)",
+    "winner_prob": 0.8959
+  },
+  {
+    "slot": "E_R1_G1",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Duke",
+    "team2": "Siena",
+    "team1_win_prob": 1.0,
+    "winner": "Duke",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "E_R1_G2",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Ohio State",
+    "team2": "TCU",
+    "team1_win_prob": 0.6879,
+    "winner": "Ohio State",
+    "winner_prob": 0.6879
+  },
+  {
+    "slot": "E_R1_G3",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Saint John's",
+    "team2": "Northern Iowa",
+    "team1_win_prob": 0.9999,
+    "winner": "Saint John's",
+    "winner_prob": 0.9999
+  },
+  {
+    "slot": "E_R1_G4",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Kansas",
+    "team2": "California Baptist",
+    "team1_win_prob": 0.9998,
+    "winner": "Kansas",
+    "winner_prob": 0.9998
+  },
+  {
+    "slot": "E_R1_G5",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Louisville",
+    "team2": "South Florida",
+    "team1_win_prob": 0.9708,
+    "winner": "Louisville",
+    "winner_prob": 0.9708
+  },
+  {
+    "slot": "E_R1_G6",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Michigan State",
+    "team2": "North Dakota State",
+    "team1_win_prob": 1.0,
+    "winner": "Michigan State",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "E_R1_G7",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "UCLA",
+    "team2": "UCF",
+    "team1_win_prob": 0.9521,
+    "winner": "UCLA",
+    "winner_prob": 0.9521
+  },
+  {
+    "slot": "E_R1_G8",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Connecticut",
+    "team2": "Furman",
+    "team1_win_prob": 1.0,
+    "winner": "Connecticut",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "M_R1_G1",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Michigan",
+    "team2": "UMBC",
+    "team1_win_prob": 1.0,
+    "winner": "Michigan",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "M_R1_G2",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Georgia",
+    "team2": "Saint Louis",
+    "team1_win_prob": 0.1838,
+    "winner": "Saint Louis",
+    "winner_prob": 0.8162
+  },
+  {
+    "slot": "M_R1_G3",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Texas Tech",
+    "team2": "Akron",
+    "team1_win_prob": 0.9753,
+    "winner": "Texas Tech",
+    "winner_prob": 0.9753
+  },
+  {
+    "slot": "M_R1_G4",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Alabama",
+    "team2": "Hofstra",
+    "team1_win_prob": 0.9999,
+    "winner": "Alabama",
+    "winner_prob": 0.9999
+  },
+  {
+    "slot": "M_R1_G5",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Tennessee",
+    "team2": "NC State",
+    "team1_win_prob": 0.9809,
+    "winner": "Tennessee",
+    "winner_prob": 0.9809
+  },
+  {
+    "slot": "M_R1_G6",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Virginia",
+    "team2": "Wright State",
+    "team1_win_prob": 1.0,
+    "winner": "Virginia",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "M_R1_G7",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Kentucky",
+    "team2": "Santa Clara",
+    "team1_win_prob": 0.6306,
+    "winner": "Kentucky",
+    "winner_prob": 0.6306
+  },
+  {
+    "slot": "M_R1_G8",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Iowa State",
+    "team2": "Tennessee State",
+    "team1_win_prob": 1.0,
+    "winner": "Iowa State",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "S_R1_G1",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Florida",
+    "team2": "Lehigh",
+    "team1_win_prob": 1.0,
+    "winner": "Florida",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "S_R1_G2",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Clemson",
+    "team2": "Iowa",
+    "team1_win_prob": 0.6708,
+    "winner": "Clemson",
+    "winner_prob": 0.6708
+  },
+  {
+    "slot": "S_R1_G3",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Vanderbilt",
+    "team2": "McNeese",
+    "team1_win_prob": 0.9944,
+    "winner": "Vanderbilt",
+    "winner_prob": 0.9944
+  },
+  {
+    "slot": "S_R1_G4",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Nebraska",
+    "team2": "Troy",
+    "team1_win_prob": 1.0,
+    "winner": "Nebraska",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "S_R1_G5",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "North Carolina",
+    "team2": "VCU",
+    "team1_win_prob": 0.9509,
+    "winner": "North Carolina",
+    "winner_prob": 0.9509
+  },
+  {
+    "slot": "S_R1_G6",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Illinois",
+    "team2": "Penn",
+    "team1_win_prob": 1.0,
+    "winner": "Illinois",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "S_R1_G7",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Saint Mary's College",
+    "team2": "Texas A&M",
+    "team1_win_prob": 0.9926,
+    "winner": "Saint Mary's College",
+    "winner_prob": 0.9926
+  },
+  {
+    "slot": "S_R1_G8",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Houston",
+    "team2": "Idaho",
+    "team1_win_prob": 1.0,
+    "winner": "Houston",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "W_R1_G1",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Arizona",
+    "team2": "Long Island",
+    "team1_win_prob": 1.0,
+    "winner": "Arizona",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "W_R1_G2",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Villanova",
+    "team2": "Utah State",
+    "team1_win_prob": 0.2707,
+    "winner": "Utah State",
+    "winner_prob": 0.7293
+  },
+  {
+    "slot": "W_R1_G3",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Wisconsin",
+    "team2": "High Point",
+    "team1_win_prob": 0.9905,
+    "winner": "Wisconsin",
+    "winner_prob": 0.9905
+  },
+  {
+    "slot": "W_R1_G4",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Arkansas",
+    "team2": "Hawai'i",
+    "team1_win_prob": 1.0,
+    "winner": "Arkansas",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "W_R1_G5",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "BYU",
+    "team2": "Miami (OH)",
+    "team1_win_prob": 0.8523,
+    "winner": "BYU",
+    "winner_prob": 0.8523
+  },
+  {
+    "slot": "W_R1_G6",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Gonzaga",
+    "team2": "Kennesaw State",
+    "team1_win_prob": 1.0,
+    "winner": "Gonzaga",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "W_R1_G7",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Miami (FL)",
+    "team2": "Missouri",
+    "team1_win_prob": 0.9902,
+    "winner": "Miami (FL)",
+    "winner_prob": 0.9902
+  },
+  {
+    "slot": "W_R1_G8",
+    "round_name": "Round of 64",
+    "round_order": 1,
+    "team1": "Purdue",
+    "team2": "Queens",
+    "team1_win_prob": 1.0,
+    "winner": "Purdue",
+    "winner_prob": 1.0
+  },
+  {
+    "slot": "E_R2_G1",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Duke",
+    "team2": "Ohio State",
+    "team1_win_prob": 0.9998,
+    "winner": "Duke",
+    "winner_prob": 0.9998
+  },
+  {
+    "slot": "E_R2_G2",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Saint John's",
+    "team2": "Kansas",
+    "team1_win_prob": 0.797,
+    "winner": "Saint John's",
+    "winner_prob": 0.797
+  },
+  {
+    "slot": "E_R2_G3",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Louisville",
+    "team2": "Michigan State",
+    "team1_win_prob": 0.0661,
+    "winner": "Michigan State",
+    "winner_prob": 0.9339
+  },
+  {
+    "slot": "E_R2_G4",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "UCLA",
+    "team2": "Connecticut",
+    "team1_win_prob": 0.0039,
+    "winner": "Connecticut",
+    "winner_prob": 0.9961
+  },
+  {
+    "slot": "M_R2_G1",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Michigan",
+    "team2": "Saint Louis",
+    "team1_win_prob": 0.998,
+    "winner": "Michigan",
+    "winner_prob": 0.998
+  },
+  {
+    "slot": "M_R2_G2",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Texas Tech",
+    "team2": "Alabama",
+    "team1_win_prob": 0.2999,
+    "winner": "Alabama",
+    "winner_prob": 0.7001
+  },
+  {
+    "slot": "M_R2_G3",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Tennessee",
+    "team2": "Virginia",
+    "team1_win_prob": 0.0189,
+    "winner": "Virginia",
+    "winner_prob": 0.9811
+  },
+  {
+    "slot": "M_R2_G4",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Kentucky",
+    "team2": "Iowa State",
+    "team1_win_prob": 0.0034,
+    "winner": "Iowa State",
+    "winner_prob": 0.9966
+  },
+  {
+    "slot": "S_R2_G1",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Florida",
+    "team2": "Clemson",
+    "team1_win_prob": 0.9976,
+    "winner": "Florida",
+    "winner_prob": 0.9976
+  },
+  {
+    "slot": "S_R2_G2",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Vanderbilt",
+    "team2": "Nebraska",
+    "team1_win_prob": 0.2905,
+    "winner": "Nebraska",
+    "winner_prob": 0.7095
+  },
+  {
+    "slot": "S_R2_G3",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "North Carolina",
+    "team2": "Illinois",
+    "team1_win_prob": 0.0828,
+    "winner": "Illinois",
+    "winner_prob": 0.9172
+  },
+  {
+    "slot": "S_R2_G4",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Saint Mary's College",
+    "team2": "Houston",
+    "team1_win_prob": 0.0411,
+    "winner": "Houston",
+    "winner_prob": 0.9589
+  },
+  {
+    "slot": "W_R2_G1",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Arizona",
+    "team2": "Utah State",
+    "team1_win_prob": 0.9984,
+    "winner": "Arizona",
+    "winner_prob": 0.9984
+  },
+  {
+    "slot": "W_R2_G2",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Wisconsin",
+    "team2": "Arkansas",
+    "team1_win_prob": 0.1418,
+    "winner": "Arkansas",
+    "winner_prob": 0.8582
+  },
+  {
+    "slot": "W_R2_G3",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "BYU",
+    "team2": "Gonzaga",
+    "team1_win_prob": 0.0064,
+    "winner": "Gonzaga",
+    "winner_prob": 0.9936
+  },
+  {
+    "slot": "W_R2_G4",
+    "round_name": "Round of 32",
+    "round_order": 2,
+    "team1": "Miami (FL)",
+    "team2": "Purdue",
+    "team1_win_prob": 0.0197,
+    "winner": "Purdue",
+    "winner_prob": 0.9803
+  },
+  {
+    "slot": "E_R3_G1",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Duke",
+    "team2": "Saint John's",
+    "team1_win_prob": 0.9835,
+    "winner": "Duke",
+    "winner_prob": 0.9835
+  },
+  {
+    "slot": "E_R3_G2",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Michigan State",
+    "team2": "Connecticut",
+    "team1_win_prob": 0.2132,
+    "winner": "Connecticut",
+    "winner_prob": 0.7868
+  },
+  {
+    "slot": "M_R3_G1",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Michigan",
+    "team2": "Alabama",
+    "team1_win_prob": 0.99,
+    "winner": "Michigan",
+    "winner_prob": 0.99
+  },
+  {
+    "slot": "M_R3_G2",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Virginia",
+    "team2": "Iowa State",
+    "team1_win_prob": 0.4545,
+    "winner": "Iowa State",
+    "winner_prob": 0.5455
+  },
+  {
+    "slot": "S_R3_G1",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Florida",
+    "team2": "Nebraska",
+    "team1_win_prob": 0.8454,
+    "winner": "Florida",
+    "winner_prob": 0.8454
+  },
+  {
+    "slot": "S_R3_G2",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Illinois",
+    "team2": "Houston",
+    "team1_win_prob": 0.1871,
+    "winner": "Houston",
+    "winner_prob": 0.8129
+  },
+  {
+    "slot": "W_R3_G1",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Arizona",
+    "team2": "Arkansas",
+    "team1_win_prob": 0.984,
+    "winner": "Arizona",
+    "winner_prob": 0.984
+  },
+  {
+    "slot": "W_R3_G2",
+    "round_name": "Sweet 16",
+    "round_order": 3,
+    "team1": "Gonzaga",
+    "team2": "Purdue",
+    "team1_win_prob": 0.7825,
+    "winner": "Gonzaga",
+    "winner_prob": 0.7825
+  },
+  {
+    "slot": "E_R4_G1",
+    "round_name": "Elite 8",
+    "round_order": 4,
+    "team1": "Duke",
+    "team2": "Connecticut",
+    "team1_win_prob": 0.8872,
+    "winner": "Duke",
+    "winner_prob": 0.8872
+  },
+  {
+    "slot": "M_R4_G1",
+    "round_name": "Elite 8",
+    "round_order": 4,
+    "team1": "Michigan",
+    "team2": "Iowa State",
+    "team1_win_prob": 0.885,
+    "winner": "Michigan",
+    "winner_prob": 0.885
+  },
+  {
+    "slot": "S_R4_G1",
+    "round_name": "Elite 8",
+    "round_order": 4,
+    "team1": "Florida",
+    "team2": "Houston",
+    "team1_win_prob": 0.5223,
+    "winner": "Florida",
+    "winner_prob": 0.5223
+  },
+  {
+    "slot": "W_R4_G1",
+    "round_name": "Elite 8",
+    "round_order": 4,
+    "team1": "Arizona",
+    "team2": "Gonzaga",
+    "team1_win_prob": 0.8165,
+    "winner": "Arizona",
+    "winner_prob": 0.8165
+  },
+  {
+    "slot": "FF_G1",
+    "round_name": "Final Four",
+    "round_order": 5,
+    "team1": "Duke",
+    "team2": "Arizona",
+    "team1_win_prob": 0.5355,
+    "winner": "Duke",
+    "winner_prob": 0.5355
+  },
+  {
+    "slot": "FF_G2",
+    "round_name": "Final Four",
+    "round_order": 5,
+    "team1": "Florida",
+    "team2": "Michigan",
+    "team1_win_prob": 0.1756,
+    "winner": "Michigan",
+    "winner_prob": 0.8244
+  },
+  {
+    "slot": "CHAMPION",
+    "round_name": "Championship",
+    "round_order": 6,
+    "team1": "Duke",
+    "team2": "Michigan",
+    "team1_win_prob": 0.5998,
+    "winner": "Duke",
+    "winner_prob": 0.5998
+  }
+]

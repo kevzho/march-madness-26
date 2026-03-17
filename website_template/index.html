@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>March Madness Run</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="header">
+      <div class="container header__inner">
+        <div>
+          <div class="kicker">March Madness • Elo Pipeline</div>
+          <h1 class="title">Run results</h1>
+          <div class="subtle" id="runMeta">Loading…</div>
+        </div>
+        <div class="header__actions">
+          <a class="btn btn--ghost" href="./bracket.html">Bracket</a>
+          <a class="btn btn--ghost" href="./power.html">Power</a>
+          <a class="btn" id="downloadZip" href="#" download>Download data</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section class="cards">
+        <article class="card">
+          <div class="card__label">Champion</div>
+          <div class="card__value" id="championValue">—</div>
+          <div class="card__hint" id="championHint">—</div>
+        </article>
+        <article class="card">
+          <div class="card__label">Teams</div>
+          <div class="card__value" id="teamsCount">—</div>
+          <div class="card__hint">From power table</div>
+        </article>
+        <article class="card">
+          <div class="card__label">Games simulated</div>
+          <div class="card__value" id="gamesCount">—</div>
+          <div class="card__hint">From bracket predictions</div>
+        </article>
+      </section>
+
+      <section class="panel" id="bracketviz">
+        <div class="panel__header">
+          <div>
+            <h2 class="panel__title">Bracket</h2>
+            <div class="subtle">Bracket-style view with predicted winners (click any column header to jump to tables below).</div>
+          </div>
+          <div class="panel__controls">
+            <a class="btn btn--ghost" href="./bracket.html">Open bracket</a>
+          </div>
+        </div>
+
+        <div class="bracketWrap">
+          <div class="bracketSection" id="firstFour"></div>
+          <div class="regionGrid" id="regionGrid"></div>
+          <div class="bracketSection" id="finalFour"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="bracket">
+        <div class="panel__header">
+          <div>
+            <h2 class="panel__title">Bracket predictions</h2>
+            <div class="subtle">Search, filter by round, and scan winners.</div>
+          </div>
+          <div class="panel__controls">
+            <label class="field">
+              <span class="field__label">Round</span>
+              <select id="roundFilter" class="select"></select>
+            </label>
+            <label class="field">
+              <span class="field__label">Search</span>
+              <input id="bracketSearch" class="input" placeholder="e.g. Duke" />
+            </label>
+          </div>
+        </div>
+        <div class="tableWrap">
+          <table class="table" id="bracketTable">
+            <thead>
+              <tr>
+                <th data-key="round_order" data-type="number">#</th>
+                <th data-key="round_name" data-type="string">Round</th>
+                <th data-key="slot" data-type="string">Slot</th>
+                <th data-key="team1" data-type="string">Team 1</th>
+                <th data-key="team2" data-type="string">Team 2</th>
+                <th data-key="team1_win_prob" data-type="number">P(Team 1)</th>
+                <th data-key="winner" data-type="string">Winner</th>
+                <th data-key="winner_prob" data-type="number">P(Winner)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" id="power">
+        <div class="panel__header">
+          <div>
+            <h2 class="panel__title">Power ratings</h2>
+            <div class="subtle">Sortable table with quick search.</div>
+          </div>
+          <div class="panel__controls">
+            <label class="field">
+              <span class="field__label">Search</span>
+              <input id="powerSearch" class="input" placeholder="e.g. Arizona" />
+            </label>
+          </div>
+        </div>
+        <div class="tableWrap">
+          <table class="table" id="powerTable">
+            <thead>
+              <tr>
+                <th data-key="team" data-type="string">Team</th>
+                <th data-key="region" data-type="string">Region</th>
+                <th data-key="seed" data-type="number">Seed</th>
+                <th data-key="wins" data-type="number">W</th>
+                <th data-key="losses" data-type="number">L</th>
+                <th data-key="net_rank" data-type="number">NET</th>
+                <th data-key="power_score" data-type="number">Power</th>
+                <th data-key="elo" data-type="number">Elo</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="subtle">
+          Built from pipeline outputs. Open with a local web server (recommended) or a static host.
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

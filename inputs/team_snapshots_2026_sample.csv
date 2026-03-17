@@ -1,0 +1,69 @@
+team,wins,losses,net_rank,seed,region
+Duke,32,2,1,1,East
+Siena,23,11,183,16,East
+Ohio State,21,12,29,8,East
+TCU,22,11,39,9,East
+Saint John's,28,6,16,5,East
+Northern Iowa,22,12,72,12,East
+Kansas,23,10,21,4,East
+California Baptist,25,8,98,13,East
+Louisville,23,10,17,6,East
+South Florida,24,8,45,11,East
+Michigan State,25,7,11,3,East
+North Dakota State,24,7,114,14,East
+UCLA,23,11,30,7,East
+UCF,21,11,51,10,East
+Connecticut,29,5,10,2,East
+Furman,19,12,186,15,East
+Arizona,32,2,3,1,West
+Long Island,24,10,198,16,West
+Villanova,24,8,35,8,West
+Utah State,27,6,26,9,West
+Wisconsin,24,10,25,5,West
+High Point,27,4,75,12,West
+Arkansas,26,8,15,4,West
+Hawai'i,22,8,101,13,West
+BYU,23,11,23,6,West
+SMU,20,13,37,11,West
+Miami (OH),28,1,64,11,West
+Gonzaga,30,3,7,3,West
+Kennesaw State,18,13,155,14,West
+Miami (FL),25,8,32,7,West
+Missouri,20,12,58,10,West
+Purdue,27,8,9,2,West
+Queens,20,13,189,15,West
+Florida,26,7,4,1,South
+Lehigh,16,16,275,16,South
+Prairie View A&M,14,17,300,16,South
+Clemson,24,10,34,8,South
+Iowa,21,12,27,9,South
+Vanderbilt,26,8,13,5,South
+McNeese,26,5,56,12,South
+Nebraska,26,6,14,4,South
+Troy,20,11,125,13,South
+North Carolina,24,8,24,6,South
+VCU,27,7,43,11,South
+Illinois,24,8,8,3,South
+Penn,17,11,139,14,South
+Saint Mary's College,26,5,22,7,South
+Texas A&M,21,11,44,10,South
+Houston,28,6,5,2,South
+Idaho,18,14,145,15,South
+Michigan,31,3,2,1,Midwest
+Howard,19,10,203,16,Midwest
+UMBC,22,8,196,16,Midwest
+Georgia,22,10,33,8,Midwest
+Saint Louis,27,5,31,9,Midwest
+Texas Tech,22,10,19,5,Midwest
+Akron,27,5,54,12,Midwest
+Alabama,23,9,18,4,Midwest
+Hofstra,22,10,88,13,Midwest
+Tennessee,22,11,20,6,Midwest
+NC State,20,13,36,11,Midwest
+Texas,17,14,42,11,Midwest
+Virginia,29,5,12,3,Midwest
+Wright State,21,11,127,14,Midwest
+Kentucky,21,13,28,7,Midwest
+Santa Clara,25,8,40,10,Midwest
+Iowa State,27,7,6,2,Midwest
+Tennessee State,20,9,172,15,Midwest
