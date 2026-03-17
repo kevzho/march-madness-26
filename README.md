@@ -61,7 +61,7 @@ python3 build_site.py --source outputs/run_00X --out websites/run_00X
 Browsers often block `fetch()` from `file://`, so use a local server:
 
 ```bash
-python3 -m http.server 5173 --directory websites/run_001
+python3 -m http.server 5173 --directory websites/run_00X # replace with run_001
 ```
 
 Then open `http://localhost:5173`.
