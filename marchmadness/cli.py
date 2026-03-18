@@ -14,6 +14,9 @@ def build_parser():
     parser.add_argument('--out', default='outputs', help='Output directory')
     parser.add_argument('--hist-teams', default=None, help='Historical team snapshots CSV')
     parser.add_argument('--hist-results', default=None, help='Historical tournament results CSV')
+    parser.add_argument('--current-season', default=None, type=int, help='Current season year (prevents training on in-progress labels)')
+    parser.add_argument('--drop-2021', action='store_true', help='Exclude 2021 from supervised training splits')
+    parser.add_argument('--eval', default=None, choices=['fixed', 'rolling'], help='Run season-based evaluation on historical training data')
     return parser
 
 
@@ -26,6 +29,9 @@ def main():
         output_dir=args.out,
         historical_team_snapshot_path=args.hist_teams,
         historical_tournament_results_path=args.hist_results,
+        current_season=args.current_season,
+        drop_2021=args.drop_2021,
+        eval_scheme=args.eval,
     )
 
 

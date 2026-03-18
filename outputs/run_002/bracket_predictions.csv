@@ -1,0 +1,68 @@
+slot,round_name,round_order,team1,team2,team1_win_prob,winner,winner_prob
+MIDWEST_11_PLAYIN,First Four,0,NC State,Texas,0.5517,NC State,0.5517
+MIDWEST_16_PLAYIN,First Four,0,Howard,UMBC,0.3863,UMBC,0.6137
+SOUTH_16_PLAYIN,First Four,0,Lehigh,Prairie View A&M,0.543,Lehigh,0.543
+WEST_11_PLAYIN,First Four,0,SMU,Miami (OH),0.1396,Miami (OH),0.8604
+E_R1_G1,Round of 64,1,Duke,Siena,0.872,Duke,0.872
+E_R1_G2,Round of 64,1,Ohio State,TCU,0.4552,TCU,0.5448
+E_R1_G3,Round of 64,1,Saint John's,Northern Iowa,0.7498,Saint John's,0.7498
+E_R1_G4,Round of 64,1,Kansas,California Baptist,0.5078,Kansas,0.5078
+E_R1_G5,Round of 64,1,Louisville,South Florida,0.4701,South Florida,0.5299
+E_R1_G6,Round of 64,1,Michigan State,North Dakota State,0.6122,Michigan State,0.6122
+E_R1_G7,Round of 64,1,UCLA,UCF,0.5384,UCLA,0.5384
+E_R1_G8,Round of 64,1,Connecticut,Furman,0.8474,Connecticut,0.8474
+M_R1_G1,Round of 64,1,Michigan,UMBC,0.8182,Michigan,0.8182
+M_R1_G2,Round of 64,1,Georgia,Saint Louis,0.3097,Saint Louis,0.6903
+M_R1_G3,Round of 64,1,Texas Tech,Akron,0.3684,Akron,0.6316
+M_R1_G4,Round of 64,1,Alabama,Hofstra,0.6168,Alabama,0.6168
+M_R1_G5,Round of 64,1,Tennessee,NC State,0.6057,Tennessee,0.6057
+M_R1_G6,Round of 64,1,Virginia,Wright State,0.8005,Virginia,0.8005
+M_R1_G7,Round of 64,1,Kentucky,Santa Clara,0.3468,Santa Clara,0.6532
+M_R1_G8,Round of 64,1,Iowa State,Tennessee State,0.7402,Iowa State,0.7402
+S_R1_G1,Round of 64,1,Florida,Lehigh,0.8889,Florida,0.8889
+S_R1_G2,Round of 64,1,Clemson,Iowa,0.5742,Clemson,0.5742
+S_R1_G3,Round of 64,1,Vanderbilt,McNeese,0.4667,McNeese,0.5333
+S_R1_G4,Round of 64,1,Nebraska,Troy,0.7619,Nebraska,0.7619
+S_R1_G5,Round of 64,1,North Carolina,VCU,0.4798,VCU,0.5202
+S_R1_G6,Round of 64,1,Illinois,Penn,0.7567,Illinois,0.7567
+S_R1_G7,Round of 64,1,Saint Mary's College,Texas A&M,0.7205,Saint Mary's College,0.7205
+S_R1_G8,Round of 64,1,Houston,Idaho,0.8579,Houston,0.8579
+W_R1_G1,Round of 64,1,Arizona,Long Island,0.856,Arizona,0.856
+W_R1_G2,Round of 64,1,Villanova,Utah State,0.4074,Utah State,0.5926
+W_R1_G3,Round of 64,1,Wisconsin,High Point,0.3602,High Point,0.6398
+W_R1_G4,Round of 64,1,Arkansas,Hawai'i,0.619,Arkansas,0.619
+W_R1_G5,Round of 64,1,BYU,Miami (OH),0.22,Miami (OH),0.78
+W_R1_G6,Round of 64,1,Gonzaga,Kennesaw State,0.886,Gonzaga,0.886
+W_R1_G7,Round of 64,1,Miami (FL),Missouri,0.6694,Miami (FL),0.6694
+W_R1_G8,Round of 64,1,Purdue,Queens,0.7944,Purdue,0.7944
+E_R2_G1,Round of 32,2,Duke,TCU,0.833,Duke,0.833
+E_R2_G2,Round of 32,2,Saint John's,Kansas,0.6232,Saint John's,0.6232
+E_R2_G3,Round of 32,2,South Florida,Michigan State,0.361,Michigan State,0.639
+E_R2_G4,Round of 32,2,UCLA,Connecticut,0.2401,Connecticut,0.7599
+M_R2_G1,Round of 32,2,Michigan,Saint Louis,0.6441,Michigan,0.6441
+M_R2_G2,Round of 32,2,Akron,Alabama,0.5476,Akron,0.5476
+M_R2_G3,Round of 32,2,Tennessee,Virginia,0.2474,Virginia,0.7526
+M_R2_G4,Round of 32,2,Santa Clara,Iowa State,0.355,Iowa State,0.645
+S_R2_G1,Round of 32,2,Florida,Clemson,0.6506,Florida,0.6506
+S_R2_G2,Round of 32,2,McNeese,Nebraska,0.4268,Nebraska,0.5732
+S_R2_G3,Round of 32,2,VCU,Illinois,0.4493,Illinois,0.5507
+S_R2_G4,Round of 32,2,Saint Mary's College,Houston,0.4467,Houston,0.5533
+W_R2_G1,Round of 32,2,Arizona,Utah State,0.7024,Arizona,0.7024
+W_R2_G2,Round of 32,2,High Point,Arkansas,0.5216,High Point,0.5216
+W_R2_G3,Round of 32,2,Miami (OH),Gonzaga,0.4613,Gonzaga,0.5387
+W_R2_G4,Round of 32,2,Miami (FL),Purdue,0.4112,Purdue,0.5888
+E_R3_G1,Sweet 16,3,Duke,Saint John's,0.6608,Duke,0.6608
+E_R3_G2,Sweet 16,3,Michigan State,Connecticut,0.385,Connecticut,0.615
+M_R3_G1,Sweet 16,3,Michigan,Akron,0.6741,Michigan,0.6741
+M_R3_G2,Sweet 16,3,Virginia,Iowa State,0.5415,Virginia,0.5415
+S_R3_G1,Sweet 16,3,Florida,Nebraska,0.4822,Nebraska,0.5178
+S_R3_G2,Sweet 16,3,Illinois,Houston,0.3826,Houston,0.6174
+W_R3_G1,Sweet 16,3,Arizona,High Point,0.6788,Arizona,0.6788
+W_R3_G2,Sweet 16,3,Gonzaga,Purdue,0.6355,Gonzaga,0.6355
+E_R4_G1,Elite 8,4,Duke,Connecticut,0.5984,Duke,0.5984
+M_R4_G1,Elite 8,4,Michigan,Virginia,0.5735,Michigan,0.5735
+S_R4_G1,Elite 8,4,Nebraska,Houston,0.446,Houston,0.554
+W_R4_G1,Elite 8,4,Arizona,Gonzaga,0.5405,Arizona,0.5405
+FF_G1,Final Four,5,Duke,Arizona,0.4809,Arizona,0.5191
+FF_G2,Final Four,5,Houston,Michigan,0.3658,Michigan,0.6342
+CHAMPION,Championship,6,Arizona,Michigan,0.5164,Arizona,0.5164

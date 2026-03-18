@@ -47,7 +47,29 @@ body{
 .kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
 .title{margin:4px 0 0; font-size:24px; line-height:1.1}
 .subtle{color:var(--muted); font-size:13px}
-.header__actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.header__actions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:flex-end;
+  max-width: 100%;
+}
+.runRow{display:flex; justify-content:flex-end; width:100%}
+.runRow .field{min-width: 220px}
+.navRow{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:nowrap;
+  max-width: 100%;
+  overflow-x:auto;
+  padding: 6px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius: 16px;
+  background: rgba(255,255,255,.03);
+}
+.navRow::-webkit-scrollbar{height:8px}
+.navRow::-webkit-scrollbar-thumb{background: rgba(255,255,255,.12); border-radius: 999px}
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   padding:10px 12px;
@@ -59,12 +81,17 @@ body{
   box-shadow: var(--shadow);
   font-weight:600;
   font-size:13px;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease, box-shadow .12s ease, opacity .12s ease;
+  white-space: nowrap;
 }
+.btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.18)}
+.btn:active{transform: translateY(0); opacity: .95}
 .btn--ghost{
   background: rgba(255,255,255,.04);
   box-shadow:none;
   color:var(--text);
 }
+.btn--ghost:hover{background: rgba(255,255,255,.07)}
 .main{padding:18px 0 60px}
 .cards{
   display:grid;

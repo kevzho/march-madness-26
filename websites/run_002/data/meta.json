@@ -1,0 +1,9 @@
+{
+  "run_id": "run_002",
+  "method": "Logistic regression (trained on 2008–2025 historical data)",
+  "method_short": "LogReg",
+  "built_at": "2026-03-18T02:57:49Z",
+  "source_dir": "outputs/run_002",
+  "champion": "Arizona",
+  "data_archive": "./data/data.zip"
+}

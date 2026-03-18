@@ -15,14 +15,22 @@
           <h1 class="title">Bracket</h1>
           <div class="subtle" id="runMeta">Loading…</div>
         </div>
-        <div class="header__actions">
-          <a class="btn btn--ghost" href="./index.html">Overview</a>
-          <a class="btn" href="./bracket.html">Bracket</a>
-          <a class="btn btn--ghost" href="./power.html">Power</a>
-          <a class="btn btn--ghost" id="downloadZip" href="#" download>Download data</a>
-        </div>
-      </div>
-    </header>
+	        <div class="header__actions">
+	          <div class="runRow">
+	            <label class="field">
+	              <span class="field__label">Run</span>
+	              <select id="runSelect" class="select"></select>
+	            </label>
+	          </div>
+	          <nav class="navRow" aria-label="Run navigation">
+	            <a class="btn btn--ghost" href="./index.html">Overview</a>
+	            <a class="btn" href="./bracket.html">Bracket</a>
+	            <a class="btn btn--ghost" href="./power.html">Power</a>
+	            <a class="btn btn--ghost" id="downloadZip" href="#" download>Download data</a>
+	          </nav>
+	        </div>
+	      </div>
+	    </header>
 
     <main class="container main">
       <section class="panel" id="bracketviz">
@@ -84,4 +92,3 @@
     <script src="./assets/app.js"></script>
   </body>
 </html>
-

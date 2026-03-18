@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>March Madness Runs</title>
+    <style>
+      :root { color-scheme: dark; }
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: #070A12; color: #EAF0FF; }
+      .wrap { max-width: 840px; margin: 0 auto; padding: 24px 18px; }
+      .card { border: 1px solid rgba(255,255,255,.10); border-radius: 16px; padding: 16px; background: rgba(255,255,255,.04); }
+      .row { display:flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+      select, a { height: 40px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); color: #EAF0FF; padding: 0 12px; text-decoration:none; display:inline-flex; align-items:center; }
+      a { font-weight: 600; }
+      .muted { color: rgba(234,240,255,.75); font-size: 13px; margin-top: 10px; }
+      h1 { font-size: 22px; margin: 0 0 12px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>March Madness runs</h1>
+        <div class="row">
+          <select id="runSelect"></select>
+          <a id="openBtn" href="#">Open</a>
+        </div>
+        <div class="muted" id="hint">Loading runs…</div>
+      </div>
+    </div>
+    <script>
+      async function loadRuns() {
+        const res = await fetch('./runs.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('runs.json not found');
+        return res.json();
+      }
+      function setHint(s) { document.getElementById('hint').textContent = s; }
+      function linkToRun(runId) { return `./${runId}/index.html`; }
+      (async () => {
+        try {
+          const m = await loadRuns();
+          const runs = Array.isArray(m.runs) ? m.runs : [];
+          const sel = document.getElementById('runSelect');
+          sel.innerHTML = '';
+          runs.forEach((r) => {
+            const id = r && (r.id || r.path) ? (r.id || r.path) : String(r);
+            const label = r && typeof r === 'object' ? (r.method_short || r.label || '') : '';
+            const opt = document.createElement('option');
+            opt.value = id;
+            opt.textContent = label ? `${id} • ${label}` : id;
+            sel.appendChild(opt);
+          });
+          const latest = m.latest || (runs[0] && (runs[0].id || runs[0].path)) || (runs[0] || '');
+          if (latest) sel.value = latest;
+          const openBtn = document.getElementById('openBtn');
+          const update = () => { openBtn.href = linkToRun(sel.value); setHint(m.updated_at ? `Manifest updated ${m.updated_at}` : ''); };
+          sel.addEventListener('change', update);
+          update();
+          const known = runs.some((r) => (r && typeof r === 'object' ? (r.id || r.path) : String(r)) === latest);
+          if (latest && known) window.location.replace(linkToRun(latest));
+        } catch (e) {
+          setHint('No runs manifest yet. Build a run site to generate runs.json.');
+          document.getElementById('openBtn').style.display = 'none';
+        }
+      })();
+    </script>
+  </body>
+</html>

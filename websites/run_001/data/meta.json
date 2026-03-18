@@ -1,5 +1,7 @@
 {
   "run_id": "run_001",
+  "method": "Elo-based (no supervised training)",
+  "method_short": "Elo",
   "built_at": "2026-03-16T23:57:41Z",
   "source_dir": "outputs/run_001",
   "champion": "Duke",

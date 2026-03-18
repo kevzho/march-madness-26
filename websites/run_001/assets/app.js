@@ -33,6 +33,15 @@ function setHref(id, value) {
   el.href = value;
 }
 
+function formatRunMeta(meta) {
+  const parts = [];
+  if (meta.run_id) parts.push(meta.run_id);
+  if (meta.method) parts.push(meta.method);
+  if (meta.built_at) parts.push(`built ${meta.built_at}`);
+  if (meta.source_dir) parts.push(`source ${meta.source_dir}`);
+  return parts.length ? parts.join(' • ') : '—';
+}
+
 function formatNumber(value, digits = 2) {
   if (value === null || value === undefined || value === '') return '—';
   const num = Number(value);
@@ -390,12 +399,78 @@ async function loadJson(path) {
   return res.json();
 }
 
+async function loadRunsManifest() {
+  const candidates = ['./runs.json', '../runs.json'];
+  for (const path of candidates) {
+    try {
+      return await loadJson(path);
+    } catch (e) {
+      // ignore
+    }
+  }
+  return null;
+}
+
+function currentPageFile() {
+  const url = new URL(window.location.href);
+  const path = url.pathname || '';
+  const file = path.split('/').pop() || '';
+  if (file.endsWith('.html')) return file;
+  return 'index.html';
+}
+
+function linkToRun(runId) {
+  const url = new URL(window.location.href);
+  const parts = (url.pathname || '').split('/').filter(Boolean);
+  const inRunDir = parts.some((p) => String(p).startsWith('run_'));
+  const base = inRunDir ? '..' : '.';
+  return `${base}/${runId}/${currentPageFile()}`;
+}
+
+async function setupRunSelector(meta) {
+  const sel = $('runSelect');
+  if (!sel) return;
+
+  const manifest = await loadRunsManifest();
+  const runs = manifest && Array.isArray(manifest.runs) ? manifest.runs : [];
+
+  sel.innerHTML = '';
+  if (!runs.length) {
+    const opt = document.createElement('option');
+    opt.value = meta.run_id || '';
+    opt.textContent = meta.run_id || 'run';
+    sel.appendChild(opt);
+    sel.disabled = true;
+    return;
+  }
+
+  runs.forEach((r) => {
+    const id = r && typeof r === 'object' ? (r.id || r.path) : String(r);
+    if (!id) return;
+    const label = r && typeof r === 'object' ? (r.label || r.method_short || '') : '';
+    const opt = document.createElement('option');
+    opt.value = id;
+    opt.textContent = label ? `${id} • ${label}` : id;
+    sel.appendChild(opt);
+  });
+
+  const current = meta && meta.run_id ? String(meta.run_id) : '';
+  if (current) sel.value = current;
+
+  sel.addEventListener('change', () => {
+    const target = linkToRun(sel.value);
+    window.location.href = target;
+  });
+}
+
 async function boot() {
   const meta = await loadJson('./data/meta.json');
   state.power = await loadJson('./data/power_scale.json');
   state.bracket = await loadJson('./data/bracket_predictions.json');
 
-  setText('runMeta', `${meta.run_id} • built ${meta.built_at} • source ${meta.source_dir}`);
+  await setupRunSelector(meta);
+
+  setText('runMeta', formatRunMeta(meta));
   setText('teamsCount', String(state.power.length));
   setText('gamesCount', String(state.bracket.length));
   setText('championValue', meta.champion || '—');

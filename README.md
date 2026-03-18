@@ -45,6 +45,26 @@ python3 -m marchmadness.cli \
   --out outputs/run_00X
 ```
 
+If you place real historical data into `inputs/historical_team_snapshots_template.csv` and
+`inputs/historical_tournament_results_template.csv`, the pipeline will also auto-detect and use them
+when you omit `--hist-teams/--hist-results`.
+
+By default the historical tournament results are filtered to exclude the current (in-progress) season
+so you don’t accidentally train on partial labels. You can also drop 2021 via `--drop-2021`.
+
+### Optional: season-based evaluation (historical)
+You can run a simple season-split evaluation (no random row splits) when historical inputs are available:
+
+```bash
+python3 -m marchmadness.cli \
+  --teams inputs/team_snapshots_2026_sample.csv \
+  --bracket inputs/bracket_slots_2026_sample.csv \
+  --out outputs/run_00X \
+  --eval fixed
+```
+
+This writes `evaluation.json` into the output folder.
+
 ## Website (from outputs)
 Generate a static site from a run’s outputs:
 
@@ -70,3 +90,6 @@ Then open `http://localhost:5173`.
 - If `python` isn’t found on your system, use `python3`.
 - If you see missing dependency errors, re-run `python3 -m pip install -r requirements.txt`.
 - Make sure you change `X` in `run_00X` to an actual number.
+
+## Sources
+- Data: [Historical March Madness Data](https://www.kaggle.com/datasets/nishaanamin/march-madness-data?select=Tournament+Matchups.csv)

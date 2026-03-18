@@ -62,6 +62,57 @@ def _make_data_archive(source_dir: Path, out_dir: Path) -> str:
     return "./data/data.zip"
 
 
+def _parse_run_number(run_id: str) -> int | None:
+    """Supports run names & parses run numbers like run_001, run_002, etc."""
+    s = str(run_id)
+    if not s.startswith("run_"):
+        return None
+    tail = s.split("_", 1)[1]
+    try:
+        return int(tail)
+    except Exception:
+        return None
+
+
+def _update_runs_manifest(site_root: Path, latest_run_id: str) -> None:
+    """
+    Writes `runs.json` in the websites root so each run site can route between runs.
+    """
+    runs: list[dict] = []
+    if site_root.exists():
+        for p in site_root.iterdir():
+            if not p.is_dir():
+                continue
+            meta_path = p / "data" / "meta.json"
+            if not meta_path.exists():
+                continue
+            label = None
+            method_short = None
+            try:
+                with meta_path.open("r", encoding="utf-8") as f:
+                    meta = json.load(f)
+                label = meta.get("label") or meta.get("method")
+                method_short = meta.get("method_short")
+            except Exception:
+                pass
+            runs.append(
+                {
+                    "id": p.name,
+                    "path": p.name,
+                    **({"label": label} if label else {}),
+                    **({"method_short": method_short} if method_short else {}),
+                }
+            )
+
+    runs.sort(key=lambda r: (_parse_run_number(r["id"]) is None, _parse_run_number(r["id"]) or 0, r["id"]))
+    payload = {
+        "updated_at": _utc_now_iso(),
+        "latest": latest_run_id,
+        "runs": runs,
+    }
+    _write_json(site_root / "runs.json", payload)
+
+
 def build_site(cfg: BuildConfig) -> Path:
     power_csv = cfg.source_dir / "power_scale.csv"
     bracket_csv = cfg.source_dir / "bracket_predictions.csv"
@@ -87,6 +138,7 @@ def build_site(cfg: BuildConfig) -> Path:
         "data_archive": data_archive,
     }
     _write_json(cfg.out_dir / "data" / "meta.json", meta)
+    _update_runs_manifest(cfg.out_dir.parent, cfg.run_id)
 
     return cfg.out_dir
 
@@ -113,4 +165,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

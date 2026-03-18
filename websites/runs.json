@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-03-18T00:00:00Z",
+  "latest": "run_002",
+  "runs": [
+    { "id": "run_001", "path": "run_001", "label": "Elo-based (no supervised training)", "method_short": "Elo" },
+    { "id": "run_002", "path": "run_002", "label": "Logistic regression (trained on 2008–2025 historical data)", "method_short": "LogReg" }
+  ]
+}
