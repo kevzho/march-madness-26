@@ -69,19 +69,19 @@ This writes `evaluation.json` into the output folder.
 Generate a static site from a run’s outputs:
 
 ```bash
-python3 build_site.py --source outputs/run_00X --out websites/run_00X
+python3 build_site.py --source outputs/run_00X --out docs/run_00X
 ```
 
 ### Pages
-- `websites/run_00X/index.html` (overview)
-- `websites/run_00X/bracket.html` (bracket view + table)
-- `websites/run_00X/power.html` (power table)
+- `docs/run_00X/index.html` (overview)
+- `docs/run_00X/bracket.html` (bracket view + table)
+- `docs/run_00X/power.html` (power table)
 
 ## View locally
 Browsers often block `fetch()` from `file://`, so use a local server:
 
 ```bash
-python3 -m http.server 5173 --directory websites/run_00X # replace with run_001
+python3 -m http.server 5173 --directory docs/run_00X # replace with run_001
 ```
 
 Then open `http://localhost:5173`.
