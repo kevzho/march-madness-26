@@ -5,7 +5,7 @@ This folder contains static websites generated from pipeline outputs.
 ## Build a site from outputs
 
 ```bash
-python3 build_site.py --source outputs/run_001 --out websites/run_001
+python3 build_site.py --source outputs/run_001 --out docs/run_001
 ```
 
 ## View locally
