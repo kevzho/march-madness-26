@@ -400,31 +400,69 @@ async function loadJson(path) {
 }
 
 async function loadRunsManifest() {
-  const candidates = ['./runs.json', '../runs.json'];
-  for (const path of candidates) {
-    try {
-      return await loadJson(path);
-    } catch (e) {
-      // ignore
-    }
+  const url = runsManifestUrl();
+  if (!url) return null;
+  try {
+    return await loadJson(url);
+  } catch (e) {
+    return null;
   }
-  return null;
 }
 
-function currentPageFile() {
+function pathSegments() {
   const url = new URL(window.location.href);
-  const path = url.pathname || '';
-  const file = path.split('/').pop() || '';
-  if (file.endsWith('.html')) return file;
+  return (url.pathname || '').split('/').filter(Boolean);
+}
+
+function findRunSegmentIndex(segments) {
+  return segments.findIndex((s) => String(s).startsWith('run_'));
+}
+
+function siteBaseSegments(segments) {
+  const runIdx = findRunSegmentIndex(segments);
+  if (runIdx !== -1) return segments.slice(0, runIdx);
+  const last = segments[segments.length - 1] || '';
+  const hasFile = String(last).includes('.');
+  return hasFile ? segments.slice(0, -1) : segments;
+}
+
+function currentPageFile(segments) {
+  const last = segments[segments.length - 1] || '';
+  if (String(last).endsWith('.html')) return String(last);
   return 'index.html';
 }
 
+function runsManifestUrl() {
+  const segments = pathSegments();
+  const base = siteBaseSegments(segments);
+  const prefix = base.length ? `/${base.join('/')}` : '';
+  return `${prefix}/runs.json`;
+}
+
+function dataFileUrl(file) {
+  const segments = pathSegments();
+  const base = siteBaseSegments(segments);
+  const runIdx = findRunSegmentIndex(segments);
+  if (runIdx === -1) return `./data/${file}`;
+  const prefix = base.length ? `/${base.join('/')}` : '';
+  const runId = String(segments[runIdx]);
+  return `${prefix}/${runId}/data/${file}`;
+}
+
 function linkToRun(runId) {
-  const url = new URL(window.location.href);
-  const parts = (url.pathname || '').split('/').filter(Boolean);
-  const inRunDir = parts.some((p) => String(p).startsWith('run_'));
-  const base = inRunDir ? '..' : '.';
-  return `${base}/${runId}/${currentPageFile()}`;
+  const segments = pathSegments();
+  const base = siteBaseSegments(segments);
+  const page = currentPageFile(segments);
+
+  const target = base.slice();
+  target.push(String(runId));
+
+  // Prefer directory-style for index pages so it works with default index serving.
+  if (page !== 'index.html') {
+    target.push(page);
+  }
+
+  return `/${target.join('/')}`;
 }
 
 async function setupRunSelector(meta) {
@@ -458,15 +496,14 @@ async function setupRunSelector(meta) {
   if (current) sel.value = current;
 
   sel.addEventListener('change', () => {
-    const target = linkToRun(sel.value);
-    window.location.href = target;
+    window.location.assign(linkToRun(sel.value));
   });
 }
 
 async function boot() {
-  const meta = await loadJson('./data/meta.json');
-  state.power = await loadJson('./data/power_scale.json');
-  state.bracket = await loadJson('./data/bracket_predictions.json');
+  const meta = await loadJson(dataFileUrl('meta.json'));
+  state.power = await loadJson(dataFileUrl('power_scale.json'));
+  state.bracket = await loadJson(dataFileUrl('bracket_predictions.json'));
 
   await setupRunSelector(meta);
 
@@ -483,7 +520,7 @@ async function boot() {
   const rounds = Array.from(new Set(state.bracket.map((r) => r.round_name))).filter(Boolean);
   if ($('roundFilter')) buildRoundFilter(rounds);
 
-  setHref('downloadZip', meta.data_archive || '#');
+  setHref('downloadZip', meta.data_archive ? dataFileUrl('data.zip') : '#');
 
   // hook controls
   if ($('roundFilter')) $('roundFilter').addEventListener('change', renderBracket);
