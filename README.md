@@ -12,7 +12,7 @@ Compute simple power ratings (Elo-like) from a team snapshot, simulate a slot-ba
 - `inputs/historical_tournament_results_template.csv`: template for multi-season tournament outcomes (optional).
 
 ## Note:
-`run_00X` refers to the $x$ th run. I've provided one example run for you.
+`run_00X` refers to the $x$-th run. I've provided one example run for you.
 
 ## Install
 ```bash
